@@ -21,4 +21,10 @@ interface MatakuliahDao {
 
     @Query("SELECT * FROM matakuliah WHERE kode = :kode")
     fun getMataKuliah(kode: String): Flow<MataKuliah>
+
+    @Delete
+    suspend fun deleteMatakuliah(mataKuliah: MataKuliah)
+
+    @Update
+    suspend fun updateMatakuliah(mataKuliah: MataKuliah)
 }
