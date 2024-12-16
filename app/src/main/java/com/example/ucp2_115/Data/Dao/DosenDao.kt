@@ -22,5 +22,9 @@ interface DosenDao {
     @Query("SELECT * FROM dosen WHERE nidn = :nidn")
     fun getDosen(nidn: String): Flow<Dosen>
 
+    @Delete
+    suspend fun deleteDosen(dosen: Dosen)
 
+    @Update
+    suspend fun updateDosen(dosen: Dosen)
 }
