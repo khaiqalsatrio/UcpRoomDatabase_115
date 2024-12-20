@@ -4,12 +4,12 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "matakuliah")
-data class MataKuliah(
+data class Matakuliah(
     @PrimaryKey
     val kode: String,
     val nama: String,
     val sks: String,
     val semester: String,
     val jenis: String,
-    val DosenPengampu: String,
+    val dosenpengampu: String
 )

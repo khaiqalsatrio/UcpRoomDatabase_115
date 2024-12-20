@@ -8,5 +8,5 @@ data class Dosen(
     @PrimaryKey
     val nidn: String,
     val nama: String,
-    val jenisKelamin: String,
+    val jeniskelamin: String,
 )

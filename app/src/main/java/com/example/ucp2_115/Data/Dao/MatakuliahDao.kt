@@ -5,7 +5,7 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
-import com.example.ucp2_115.Data.entity.MataKuliah
+import com.example.ucp2_115.Data.entity.Matakuliah
 import kotlinx.coroutines.flow.Flow
 
 @Dao
@@ -13,18 +13,18 @@ interface MatakuliahDao {
 
     @Insert
     suspend fun insertMatakuliah(
-        mataKuliah: MataKuliah
+        mataKuliah: Matakuliah
     )
 
     @Query("SELECT * FROM matakuliah ORDER BY nama ASC")
-    fun getAllMataKuliah(): Flow<List<MataKuliah>>
+    fun getAllMataKuliah(): Flow<List<Matakuliah>>
 
     @Query("SELECT * FROM matakuliah WHERE kode = :kode")
-    fun getMataKuliah(kode: String): Flow<MataKuliah>
+    fun getMataKuliah(kode: String): Flow<Matakuliah>
 
     @Delete
-    suspend fun deleteMatakuliah(mataKuliah: MataKuliah)
+    suspend fun deleteMatakuliah(matakuliah: Matakuliah)
 
     @Update
-    suspend fun updateMatakuliah(mataKuliah: MataKuliah)
+    suspend fun updateMatakuliah(matakuliah: Matakuliah)
 }
