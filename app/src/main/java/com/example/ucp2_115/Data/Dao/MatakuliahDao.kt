@@ -17,10 +17,10 @@ interface MatakuliahDao {
     )
 
     @Query("SELECT * FROM matakuliah ORDER BY nama ASC")
-    fun getAllMataKuliah(): Flow<List<Matakuliah>>
+    fun getAllMtk(): Flow<List<Matakuliah>>
 
     @Query("SELECT * FROM matakuliah WHERE kode = :kode")
-    fun getMataKuliah(kode: String): Flow<Matakuliah>
+    fun getMatakuliah(kode: String): Flow<Matakuliah>
 
     @Delete
     suspend fun deleteMatakuliah(matakuliah: Matakuliah)
