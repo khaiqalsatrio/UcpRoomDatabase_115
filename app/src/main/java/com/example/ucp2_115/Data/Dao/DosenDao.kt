@@ -17,7 +17,7 @@ interface DosenDao {
     )
 
     @Query("SELECT * FROM dosen ORDER BY nama ASC")
-    fun getAllDosen(): Flow<List<Dosen>>
+    fun getAllDsn(): Flow<List<Dosen>>
 
     @Query("SELECT * FROM dosen WHERE nidn = :nidn")
     fun getDosen(nidn: String): Flow<Dosen>
