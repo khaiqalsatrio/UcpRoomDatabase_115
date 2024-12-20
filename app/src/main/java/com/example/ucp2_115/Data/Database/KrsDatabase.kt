@@ -13,7 +13,7 @@ import com.example.ucp2_115.Data.entity.Matakuliah
 abstract class KrsDatabase : RoomDatabase() {
 
     abstract fun dosenDao() : DosenDao
-    abstract fun matakuliah() : MatakuliahDao
+    abstract fun matakuliahDao() : MatakuliahDao
 
     companion object {
         @Volatile
