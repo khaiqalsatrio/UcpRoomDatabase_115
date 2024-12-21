@@ -1,7 +1,6 @@
 package com.example.ucp2_115.ui.costumwidget
 
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExposedDropdownMenuBox
 import androidx.compose.material3.ExposedDropdownMenuDefaults
@@ -15,6 +14,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 
+@OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class) // Tambahkan ini
 @Composable
 fun DynamicSelectedTextField(
     seletedValue: String,
@@ -27,11 +27,11 @@ fun DynamicSelectedTextField(
 
     ExposedDropdownMenuBox(
         expanded = expanded,
-        onExpandedChange = {expanded = !expanded},
+        onExpandedChange = { expanded = !expanded },
         modifier = Modifier
     ) {
         OutlinedTextField(
-            readOnly =true,
+            readOnly = true,
             value = seletedValue,
             onValueChange = {},
             label = { Text(text = Label) },
@@ -42,17 +42,19 @@ fun DynamicSelectedTextField(
             modifier = Modifier.menuAnchor().fillMaxWidth()
         )
 
-        ExposedDropdownMenu(expanded = expanded, onDismissRequest = {expanded = false}) {
-            options.forEach { options: String ->
+        ExposedDropdownMenu(
+            expanded = expanded,
+            onDismissRequest = { expanded = false }
+        ) {
+            options.forEach { option: String ->
                 DropdownMenuItem(
-                    text = { Text(text = options) },
+                    text = { Text(text = option) },
                     onClick = {
                         expanded = false
-                        onValueChangedEvent(options)
+                        onValueChangedEvent(option)
                     }
                 )
             }
         }
     }
 }
-
