@@ -13,19 +13,23 @@ object DestinasiDosen : AlamatNavigasi {
 }
 
 object DestinasiDosenDetail : AlamatNavigasi {
-    override val route = "dosendetail"
+    override val route = "dosen_detail"
     const val NIDN = "nidn"
-    val routesWithArg = "$route/{$NIDN}"
+    val routesWithArg = "$route/{$NIDN}" // Menggunakan placeholder untuk argumen
+}
+
+object DestinasiMatakuliah : AlamatNavigasi {
+    override val route = "matakuliah"
 }
 
 object DestinasiMatakuliahDetail : AlamatNavigasi {
-    override val route = "matakuliah"
+    override val route = "matakuliah_detail"
     const val KODE = "kode"
-    val routesWithArg = "$route/{$KODE}"
+    val routesWithArg = "$route/{$KODE}" // Placeholder untuk argumen
 }
 
 object DestinasiMatakuliahUpdate : AlamatNavigasi {
-    override val route = "matakuliahUpdate"
+    override val route = "matakuliah_update"
     const val KODE = "kode"
-    val routesWithArg = "$route/{$KODE}"
+    val routesWithArg = "$route/{$KODE}" // Placeholder untuk argumen
 }
