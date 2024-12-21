@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.ucp2_115.Data.entity.Dosen
 import com.example.ucp2_115.repository.RepositoryDosen
+import com.example.ucp2_115.ui.navigation.DestinasiDosenDetail
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
@@ -20,7 +21,7 @@ class DetailDosenViewModel(
 ) : ViewModel() {
 
     // Mendapatkan NIDN dari SavedStateHandle
-    private val _nidn: String = checkNotNull(savedStateHandle[DestinasiDosenDetail.NIDN])
+    private val _nidn: String = checkNotNull(saveStateHandle[DestinasiDosenDetail.NIDN])
 
     // Mendapatkan detail mahasiswa dan mengelola UI state
     val detailUiState: StateFlow<DetailUiState> = repositoryDosen.getDosen(_nidn)
