@@ -7,3 +7,4 @@
 ![Screenshot 2024-12-21 132002](https://github.com/user-attachments/assets/e4887e1c-46cb-4d03-9531-afdaf366bf4d)
 ![Screenshot 2024-12-21 132036](https://github.com/user-attachments/assets/7addc5f4-618b-4508-8fa4-4f8d934f9322)
 ![Screenshot 2024-12-21 132100](https://github.com/user-attachments/assets/b8f4112c-66f7-406d-99a1-0b1db46d0ddf)
+Vidio penjelasan : https://drive.google.com/file/d/1-A1t10MKV3JPBfvDaIkgLAAe9FwQ6hHW/view?usp=sharing
