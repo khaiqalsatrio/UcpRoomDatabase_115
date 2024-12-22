@@ -1,3 +1,6 @@
+Vidio penjelasan : https://drive.google.com/file/d/1-A1t10MKV3JPBfvDaIkgLAAe9FwQ6hHW/view?usp=sharing
+
+
 ![Screenshot 2024-12-21 131758](https://github.com/user-attachments/assets/925a17dc-a97b-4d42-b5cc-2a22b4ad311c)
 ![Screenshot 2024-12-21 131816](https://github.com/user-attachments/assets/2f4ec50b-ff91-4dcb-96bb-ea66960cd080)
 ![Screenshot 2024-12-21 131838](https://github.com/user-attachments/assets/9eec3bd9-996b-4eec-ac5b-eb0e6bda01cb)
