@@ -8,6 +8,7 @@ class LocalRepositoryDosen(
     private val dosenDao: DosenDao
 ) : RepositoryDosen{
 
+
     override suspend fun insertDosen(dosen: Dosen) {
         dosenDao.insertDosen(dosen)
     }
